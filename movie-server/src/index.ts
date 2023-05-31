@@ -28,8 +28,8 @@ type movie = {
 };
 
 const app: Application = express();
-const PORT_NUMBER: number = Number(process.env.PROCESS)|| 3000;
-const TOKEN_KEY = process.env.SECRET || "test";
+const PORT_NUMBER: number = Number(process.env.PROCESS);
+const TOKEN_KEY = process.env.SECRET ;
 
 app.use(cors());
 app.use(bodyParser.json());
